@@ -1,5 +1,5 @@
 {
-  "name": "react-native-awesome-module",
+  "name": "@epas1117/react-native-awesome-module",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -28,6 +28,9 @@
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "react-native",
@@ -119,7 +122,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -130,6 +136,14 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {
+    "@kushki/js": "^1.19.1",
+    "sift-react-native": "^0.1.1"
   }
 }
